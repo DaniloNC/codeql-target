@@ -12,9 +12,11 @@
     <script>
         let params = new URL(document.location).searchParams;
         let script = decodeURI(params.get("s"));
-        setTimeout(script);
-        setTimeout(script, 1);
         eval(script);
+    </script>
+    <script>
+        let script2 = location.hash.substring(1);
+        eval(script2);
     </script>
 </body>
 
